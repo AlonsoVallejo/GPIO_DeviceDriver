@@ -97,7 +97,7 @@ static ssize_t drv_write(struct file *filp, const char __user *buf, size_t len, 
     pr_err("ldd_gpio: ERROR: not all the bytes have been copied from user\n");
   }
   
-  pr_info("Write Function : GPIO_LED_OUT_PIN Set = %c\n", rec_buf[0]);
+  //pr_info("Write Function : GPIO_LED_OUT_PIN Set = %c\n", rec_buf[0]);
   
   if (rec_buf[0] == '1') {
     //set the GPIO value to HIGH
